@@ -1,5 +1,5 @@
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 from langchain_openai import ChatOpenAI
 chat_model = ChatOpenAI()
@@ -12,7 +12,7 @@ import streamlit as st
 
 st.title("AI가 알려주는 간단 음식레시피!")
 
-subject = st.text_input("알고싶은 음식이름을 입력하세요!")
+subject = st.text_input("궁금한음식의 이름을 입력하세요!")
 st.write("오늘의 음식: "+subject)
 
 if st.button("레시피 찾기"):
